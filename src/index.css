@@ -1,0 +1,61 @@
+:root {
+  --coffee-50: #f7f2ed;
+  --coffee-100: #efe5db;
+  --coffee-200: #e0cbba;
+  --coffee-300: #caa586;
+  --coffee-400: #b68562;
+  --coffee-500: #8b5e34;
+  --coffee-600: #6e4a2a;
+  --coffee-700: #553a22;
+  --coffee-800: #3a2717;
+  --coffee-900: #24170e;
+  --bg: #191614;
+  --text: #ffffff;
+  --muted: rgba(255,255,255,0.9);
+  --card: rgba(255,255,255,0.25);
+  --border: rgba(255,255,255,0.08);
+  --accent: var(--coffee-500);
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  line-height: 1.6;
+  font-weight: 400;
+  color-scheme: dark;
+  color: var(--text);
+  background:
+    linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.6)),
+    url('https://images.unsplash.com/photo-1541167760496-1628856ab772?q=80&w=1600&auto=format&fit=crop'),
+    var(--bg);
+  background-size: auto, cover, auto;
+  background-position: center, center, center;
+  background-repeat: no-repeat, no-repeat, repeat;
+  background-attachment: fixed, fixed, fixed;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a { color: inherit; text-decoration: none; }
+
+body { margin: 0; min-width: 320px; min-height: 100vh; }
+html { scroll-behavior: smooth; }
+
+h1 { font-size: 3rem; line-height: 1.15; margin: 0; }
+
+button {
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  padding: 0.6rem 1.1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: inherit;
+  background-color: rgba(255,255,255,0.06);
+  color: var(--text);
+  cursor: pointer;
+  transition: transform 0.15s ease, background 0.2s ease, border-color 0.2s ease;
+}
+button:hover { background: rgba(255,255,255,0.1); transform: translateY(-1px); }
+button:active { transform: translateY(0); }
+
+@media (max-width: 800px) {
+  h1 { font-size: 2.25rem; }
+}
